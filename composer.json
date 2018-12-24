@@ -1,0 +1,36 @@
+{
+  "name": "mixstart/mixcli",
+  "description": "MixPHP 系统命令开发项目 http://www.mixphp.cn",
+  "type": "project",
+  "keywords": [
+    "framework",
+    "mixphp",
+    "swoole"
+  ],
+  "homepage": "http://www.mixphp.cn/",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Jian Liu",
+      "email": "coder.liu@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "mixstart/mix-framework": "dev-master",
+    "mixstart/mix-console": "dev-master",
+    "mixstart/mix-log": "dev-master",
+    "mixstart/mix-concurrent": "dev-master",
+    "mixstart/mix-database": "dev-master",
+    "mixstart/mix-redis": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cli\\": "src/"
+    },
+    "files": [
+      "src/ApplicationInterface.php",
+      "src/functions.php"
+    ]
+  }
+}
