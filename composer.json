@@ -1,6 +1,6 @@
 {
   "name": "mixstart/mixcli",
-  "description": "MixPHP 系统命令开发项目 http://www.mixphp.cn",
+  "description": "MixPHP 系统命令开发 http://www.mixphp.cn",
   "type": "project",
   "keywords": [
     "framework",
