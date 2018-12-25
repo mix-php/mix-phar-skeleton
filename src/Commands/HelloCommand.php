@@ -3,6 +3,7 @@
 namespace Cli\Commands;
 
 use Mix\Console\Command;
+use Mix\Console\CommandLine\Flag;
 
 /**
  * 命令范例
@@ -17,6 +18,8 @@ class HelloCommand extends Command
     public function main()
     {
         println('Hello, World!');
+        $name = Flag::string('name', 'none');
+        println("My name is {$name}");
     }
 
 }
