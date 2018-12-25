@@ -15,6 +15,27 @@
 
 PHP 原本就是一个动态版本的 C 库集合，现在基于 Swoole 的协程支持，再加上 Mix 封装的大量基础设施，Mix CLI 基本等同于一个动态版本的 Golang 了，极大的扩展了 PHP 的开发领域，可以用来快速开发各种高性能的 CLI 程序，如：核心业务的守护程序、轻量级中间件、运维工具、系统命令、开发辅助工具等。
 
+## 开发文档
+
+MixPHP开发指南：http://doc.mixphp.cn
+
+## 环境要求
+
+* PHP >= 7.0
+* Swoole >= 4.2.2 （协程）
+
+## 快速开始
+
+推荐使用 [composer](https://www.phpcomposer.com/) 安装。
+
+安装最新版本 `V2`：
+
+```shell
+composer create-project mixstart/mix-cli=v2.0.1-Beta1 --prefer-dist
+```
+
+开发方式与 MixPHP 一样，参见 MixPHP 开发指南。
+
 ## License
 
 Apache License Version 2.0, http://www.apache.org/licenses/
