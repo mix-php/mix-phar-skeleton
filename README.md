@@ -34,7 +34,7 @@ MixPHP开发指南：http://doc.mixphp.cn
 composer create-project mixstart/mix-cli=v2.0.1-Beta1 --prefer-dist
 ```
 
-开发方式与 MixPHP 一样，参见 MixPHP 开发指南。
+开发方式与 MixPHP 的 console、daemon 一样，参见 MixPHP 开发指南。
 
 ## License
 
