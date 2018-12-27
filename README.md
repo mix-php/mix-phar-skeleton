@@ -5,7 +5,7 @@
 - 统一的 CLI 交互封装，用户只需增加命令。
 - `Flag` 获取命令行参数。
 - `Color` 带颜色的输出支持。
-- `xgo + chan` 全面的原生协程支持。(需要 Swoole)
+- `xgo + chan`、`WaitGroup` 全面的原生协程支持。(需要 Swoole)
 - `redisPool`、`PDOPool` 连接池支持。(需要 Swoole)
 - `Dispatcher`、`Worker` 协程池支持。(需要 Swoole)
 
