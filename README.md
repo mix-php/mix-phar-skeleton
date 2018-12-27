@@ -31,7 +31,7 @@ MixPHP开发指南：http://doc.mixphp.cn
 安装最新版本 `V2`：
 
 ```shell
-composer create-project mixstart/mix-cli=v2.0.1-Beta1 --prefer-dist
+composer create-project mix/mix-cli=v2.0.1-Beta2 --prefer-dist
 ```
 
 开发方式与 MixPHP 的 console、daemon 一样，参见 MixPHP 开发指南。
