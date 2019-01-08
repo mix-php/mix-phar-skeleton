@@ -37,7 +37,7 @@ return [
         // 错误
         'error' => [
             // 类路径
-            'class' => 'Mix\Console\Error',
+            'class' => Mix\Console\Error::class,
             // 错误级别
             'level' => E_ALL,
         ],

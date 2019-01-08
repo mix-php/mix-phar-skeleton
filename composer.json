@@ -22,7 +22,8 @@
     "mix/log": "2.0.*",
     "mix/concurrent": "2.0.*",
     "mix/database": "2.0.*",
-    "mix/redis": "2.0.*"
+    "mix/redis": "2.0.*",
+    "mix/cache": "2.0.*"
   },
   "minimum-stability": "beta",
   "autoload": {
