@@ -36,16 +36,24 @@ return [
 
         // 错误
         'error' => [
-            // 类路径
-            'class' => Mix\Console\Error::class,
-            // 错误级别
-            'level' => E_ALL,
+            // 依赖引用
+            'ref' => beanname(Mix\Console\Error::class),
         ],
 
     ],
 
-    // 类库配置
-    'libraries'        => [
+    // 依赖配置
+    'beans'            => [
+
+        [
+            // 类路径
+            'class'      => Mix\Console\Error::class,
+            // 属性
+            'properties' => [
+                // 错误级别
+                'level' => E_ALL,
+            ],
+        ],
 
     ],
 
