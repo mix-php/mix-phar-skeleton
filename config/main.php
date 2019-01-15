@@ -16,7 +16,7 @@ return [
     'initialize'       => [],
 
     // 基础路径
-    'basePath'         => str_replace('phar://', '', dirname(dirname(__DIR__))),
+    'basePath'         => str_replace(['phar://', '/'], ['', DIRECTORY_SEPARATOR], dirname(dirname(__DIR__))),
 
     // 运行目录路径
     'runtimePath'      => '',
