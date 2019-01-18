@@ -30,8 +30,10 @@
     "psr-4": {
       "Cli\\": "src/"
     },
+    "classmap": [
+      "src/ApplicationInterface.php"
+    ],
     "files": [
-      "src/ApplicationInterface.php",
       "src/functions.php"
     ]
   }
