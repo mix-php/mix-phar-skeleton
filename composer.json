@@ -25,7 +25,7 @@
     "mix/redis": "2.0.*",
     "mix/cache": "2.0.*"
   },
-  "minimum-stability": "beta",
+  "minimum-stability": "RC",
   "autoload": {
     "psr-4": {
       "Cli\\": "src/"
