@@ -11,19 +11,19 @@
   "license": "Apache-2.0",
   "authors": [
     {
-      "name": "Jian Liu",
-      "email": "coder.liu@qq.com"
+      "name": "liu,jian",
+      "email": "coder.keda@gmail.com"
     }
   ],
   "require": {
     "php": ">=7.0.0",
-    "mix/framework": "2.0.*",
-    "mix/console": "2.0.*",
-    "mix/log": "2.0.*",
-    "mix/concurrent": "2.0.*",
-    "mix/database": "2.0.*",
-    "mix/redis": "2.0.*",
-    "mix/cache": "2.0.*"
+    "mix/framework": "~2.0",
+    "mix/console": "~2.0",
+    "mix/log": "~2.0",
+    "mix/concurrent": "~2.0",
+    "mix/database": "~2.0",
+    "mix/redis": "~2.0",
+    "mix/cache": "~2.0"
   },
   "minimum-stability": "RC",
   "autoload": {

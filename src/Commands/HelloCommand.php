@@ -2,14 +2,13 @@
 
 namespace Cli\Commands;
 
-use Mix\Console\Command;
 use Mix\Console\CommandLine\Flag;
 
 /**
  * 命令范例
- * @author LIUJIAN <coder.keda@gmail.com>
+ * @author liu,jian <coder.keda@gmail.com>
  */
-class HelloCommand extends Command
+class HelloCommand
 {
 
     /**
