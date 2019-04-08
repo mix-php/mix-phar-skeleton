@@ -24,7 +24,14 @@ return [
     // 命令
     'commands'         => [
 
-        'hi' => ['Hello', 'description' => "Hello world.", 'options' => ['--name' => 'your name.']],
+        'hl'  => [
+            'Hello',
+            'description' => "Demo.",
+            'options'     => [
+                [['n', 'name'], 'description' => 'Your name.'],
+                ['say', 'description' => "\tSay ..."],
+            ],
+        ],
 
     ],
 
