@@ -1,6 +1,6 @@
 {
   "name": "mix/mix-phar",
-  "description": "MixPHP 系统命令开发 http://www.mixphp.cn",
+  "description": "MixPHP 命令行程序开发 (Phar单执行文件) http://www.mixphp.cn",
   "type": "project",
   "keywords": [
     "framework",
