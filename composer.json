@@ -17,10 +17,10 @@
   ],
   "require": {
     "php": ">=7.0.0",
-    "ext-mbstring": "*",
     "mix/framework": "~2.0.0",
     "mix/console": "~2.0.0",
     "mix/log": "~2.0.0",
+    "mix/validate": "~2.0.0",
     "mix/concurrent": "~2.0.0",
     "mix/database": "~2.0.0",
     "mix/redis": "~2.0.0",
