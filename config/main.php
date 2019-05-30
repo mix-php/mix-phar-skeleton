@@ -4,7 +4,7 @@
 return [
 
     // 应用名称
-    'appName'          => 'mix-cli',
+    'appName'          => 'mix-phar',
 
     // 应用版本
     'appVersion'       => '0.0.0',
@@ -19,7 +19,7 @@ return [
     'runtimePath'      => '',
 
     // 命令命名空间
-    'commandNamespace' => 'Cli\Commands',
+    'commandNamespace' => 'Phar\Commands',
 
     // 命令
     'commands'         => [
