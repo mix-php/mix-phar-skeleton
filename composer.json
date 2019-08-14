@@ -1,6 +1,6 @@
 {
   "name": "mix/mix-phar",
-  "description": "MixPHP 命令行程序开发 (Phar单执行文件) http://www.mixphp.cn",
+  "description": "Mix Phar (单执行文件命令行) http://www.mixphp.cn",
   "type": "project",
   "keywords": [
     "framework",
@@ -17,30 +17,21 @@
   ],
   "require": {
     "php": ">=7.0.0",
-    "mix/framework": "~2.0.0",
-    "mix/console": "~2.0.0",
-    "mix/log": "~2.0.0",
-    "mix/validate": "~2.0.0",
-    "mix/concurrent": "~2.0.0",
-    "mix/database": "~2.0.0",
-    "mix/redis": "~2.0.0",
-    "mix/cache": "~2.0.0"
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "mix/console": "v2.1.x-dev",
+    "mix/bean": "v2.1.x-dev",
+    "mix/log": "v2.1.x-dev",
+    "mix/validate": "v2.1.x-dev",
+    "mix/helper": "v2.1.x-dev",
+    "mix/concurrent": "v2.1.x-dev"
   },
   "autoload": {
     "psr-4": {
       "Phar\\": "src/"
     },
-    "classmap": [
-      "src/ApplicationInterface.php"
-    ],
     "files": [
       "src/functions.php"
     ]
-  },
-  "repositories": {
-    "packagist": {
-      "type": "composer",
-      "url": "https://packagist.laravel-china.org"
-    }
   }
 }

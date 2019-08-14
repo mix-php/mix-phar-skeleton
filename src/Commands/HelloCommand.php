@@ -5,7 +5,8 @@ namespace Phar\Commands;
 use Mix\Console\CommandLine\Flag;
 
 /**
- * 命令范例
+ * Class HelloCommand
+ * @package Phar\Commands
  * @author liu,jian <coder.keda@gmail.com>
  */
 class HelloCommand
