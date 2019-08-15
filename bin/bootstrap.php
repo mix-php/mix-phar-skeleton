@@ -6,9 +6,9 @@ use Mix\Concurrent\Coroutine;
 
 // Coroutine
 if (extension_loaded('swoole')) {
-    Coroutine::enableHook(SWOOLE_HOOK_ALL ^ SWOOLE_HOOK_FILE);
     Coroutine::set([
         'max_coroutine' => 300000,
+        'hook_flags'    => SWOOLE_HOOK_ALL ^ SWOOLE_HOOK_FILE,
     ]);
 }
 
