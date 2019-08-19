@@ -15,6 +15,15 @@ return [
     // 基础路径
     'basePath'         => str_replace(['phar://', '/'], ['', DIRECTORY_SEPARATOR], dirname(dirname(__DIR__))),
 
+    // 开启默认协程
+    'enableCoroutine'  => true,
+
+    // 协程设置
+    'coroutineSetting' => [
+        'max_coroutine' => 300000,
+        'hook_flags'    => SWOOLE_HOOK_ALL ^ SWOOLE_HOOK_FILE,
+    ],
+
     // 命令命名空间
     'commandNamespace' => 'Console\Commands',
 
