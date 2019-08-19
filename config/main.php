@@ -24,9 +24,6 @@ return [
         'hook_flags'    => SWOOLE_HOOK_ALL ^ SWOOLE_HOOK_FILE,
     ],
 
-    // 命令命名空间
-    'commandNamespace' => 'Console\Commands',
-
     // 命令
     'commands'         => [
 
