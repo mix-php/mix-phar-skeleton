@@ -15,7 +15,7 @@ return [
     // 基础路径
     'basePath'         => str_replace(['phar://', '/'], ['', DIRECTORY_SEPARATOR], dirname(dirname(__DIR__))),
 
-    // 开启默认协程
+    // 开启协程
     'enableCoroutine'  => true,
 
     // 协程设置
