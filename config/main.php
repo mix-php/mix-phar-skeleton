@@ -4,28 +4,28 @@
 return [
 
     // 应用名称
-    'appName'          => 'mix-phar',
+    'appName'    => 'mix-phar',
 
     // 应用版本
-    'appVersion'       => '0.0.0',
+    'appVersion' => '0.0.0',
 
     // 应用调试
-    'appDebug'         => true,
+    'appDebug'   => true,
 
     // 基础路径
-    'basePath'         => str_replace(['phar://', '/'], ['', DIRECTORY_SEPARATOR], dirname(dirname(__DIR__))),
+    'basePath'   => str_replace(['phar://', '/'], ['', DIRECTORY_SEPARATOR], dirname(dirname(__DIR__))),
 
-    // 开启协程
-    'enableCoroutine'  => true,
-
-    // 协程设置
-    'coroutineSetting' => [
-        'max_coroutine' => 300000,
-        'hook_flags'    => SWOOLE_HOOK_ALL ^ SWOOLE_HOOK_FILE,
+    // 协程配置
+    'coroutine'  => [
+        true,
+        [
+            'max_coroutine' => 300000,
+            'hook_flags'    => SWOOLE_HOOK_ALL ^ SWOOLE_HOOK_FILE,
+        ],
     ],
 
     // 命令
-    'commands'         => [
+    'commands'   => [
 
         'hl' => [
             \Phar\Commands\HelloCommand::class,
@@ -39,7 +39,7 @@ return [
     ],
 
     // 依赖配置
-    'beans'            => [
+    'beans'      => [
 
         // 错误
         [
