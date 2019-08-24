@@ -1,6 +1,6 @@
 <?php
 
-// Console应用配置
+// 应用清单
 return [
 
     // 应用名称
@@ -20,7 +20,7 @@ return [
         true,
         [
             'max_coroutine' => 300000,
-            'hook_flags'    => SWOOLE_HOOK_ALL ^ SWOOLE_HOOK_FILE,
+            'hook_flags'    => 1879048191 ^ 256, // SWOOLE_HOOK_ALL ^ SWOOLE_HOOK_FILE,
         ],
     ],
 
@@ -28,7 +28,7 @@ return [
     'commands'   => [
 
         'hl' => [
-            \Phar\Commands\HelloCommand::class,
+            \App\Commands\HelloCommand::class,
             'description' => "\tEcho demo.",
             'options'     => [
                 [['n', 'name'], 'description' => 'Your name'],

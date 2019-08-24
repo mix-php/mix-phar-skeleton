@@ -1,6 +1,6 @@
 <?php
 
-namespace Phar\Commands;
+namespace App\Commands;
 
 use Mix\Console\CommandLine\Flag;
 
