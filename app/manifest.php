@@ -83,8 +83,6 @@ return [
             'constructorArgs' => [
                 // 标准输出处理器
                 ['ref' => \Mix\Log\StdoutHandler::class],
-                // 文件处理器
-                ['ref' => \Mix\Log\FileHandler::class],
             ],
         ],
 
@@ -94,20 +92,6 @@ return [
             'class' => \Mix\Log\StdoutHandler::class,
         ],
 
-        // 日志文件处理器
-        [
-            // 类路径
-            'class'      => \Mix\Log\FileHandler::class,
-            // 属性注入
-            'properties' => [
-                // 日志目录
-                'dir'         => dirname(__DIR__) . DIRECTORY_SEPARATOR . 'logs',
-                // 日志轮转类型
-                'rotate'      => \Mix\Log\FileHandler::ROTATE_DAY,
-                // 最大文件尺寸
-                'maxFileSize' => 0,
-            ],
-        ],
     ],
 
 ];
