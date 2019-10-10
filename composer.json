@@ -18,17 +18,17 @@
   ],
   "require": {
     "php": ">=7.2.0",
-    "mix/console": "v2.1.0-alpha",
-    "mix/bean": "v2.1.0-alpha",
-    "mix/log": "v2.1.0-alpha",
-    "mix/validate": "v2.1.0-alpha",
-    "mix/helper": "v2.1.0-alpha",
-    "mix/concurrent": "v2.1.0-alpha"
+    "mix/console": "v2.1.0-RC",
+    "mix/bean": "v2.1.0-RC",
+    "mix/log": "v2.1.0-RC",
+    "mix/validate": "v2.1.0-RC",
+    "mix/helper": "v2.1.0-RC",
+    "mix/concurrent": "v2.1.0-RC"
   },
   "require-dev": {
     "swoole/ide-helper": "dev-master"
   },
-  "minimum-stability": "alpha",
+  "minimum-stability": "RC",
   "autoload": {
     "psr-4": {
       "App\\": "app/src/"
