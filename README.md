@@ -31,7 +31,7 @@ MixPHP 开发指南：http://doc.mixphp.cn
 安装最新版本：
 
 ```shell
-composer create-project mix/mix-phar-skeleton=v2.1.x-RC --prefer-dist
+composer create-project mix/mix-phar-skeleton=v2.1.0-RC --prefer-dist
 ```
 
 开发方式与 MixPHP 的命令行开发一样，参见 MixPHP 开发指南。
