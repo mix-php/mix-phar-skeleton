@@ -17,16 +17,18 @@
     }
   ],
   "require": {
-    "php": ">=7.0.0",
-    "ext-json": "*",
-    "ext-mbstring": "*",
-    "mix/console": "v2.1.0-beta",
-    "mix/bean": "v2.1.0-beta",
-    "mix/log": "v2.1.0-beta",
-    "mix/validate": "v2.1.0-beta",
-    "mix/helper": "v2.1.0-beta",
-    "mix/concurrent": "v2.1.0-beta"
+    "php": ">=7.2.0",
+    "mix/console": "v2.1.0-alpha",
+    "mix/bean": "v2.1.0-alpha",
+    "mix/log": "v2.1.0-alpha",
+    "mix/validate": "v2.1.0-alpha",
+    "mix/helper": "v2.1.0-alpha",
+    "mix/concurrent": "v2.1.0-alpha"
   },
+  "require-dev": {
+    "swoole/ide-helper": "dev-master"
+  },
+  "minimum-stability": "alpha",
   "autoload": {
     "psr-4": {
       "App\\": "app/src/"
