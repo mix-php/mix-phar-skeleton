@@ -1,4 +1,4 @@
-## Mix Phar
+## Mix Phar Skeleton
 
 本项目是 MixPHP 开发命令行单执行文件 (Phar) 的程序骨架，MixPHP 封装了大量命令行开发基础设施，包括：
 
@@ -21,7 +21,7 @@ MixPHP 开发指南：http://doc.mixphp.cn
 
 ## 环境要求
 
-* PHP >= 7.0
+* PHP >= 7.2
 * Swoole >= 4.4.1 （可选）
 
 ## 快速开始
@@ -31,7 +31,7 @@ MixPHP 开发指南：http://doc.mixphp.cn
 安装最新版本：
 
 ```shell
-composer create-project mix/mix-phar-skeleton --prefer-dist
+composer create-project mix/mix-phar-skeleton=v2.1.x-alpha --prefer-dist
 ```
 
 开发方式与 MixPHP 的命令行开发一样，参见 MixPHP 开发指南。
