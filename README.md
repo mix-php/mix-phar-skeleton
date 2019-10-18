@@ -22,7 +22,7 @@ MixPHP 开发指南：http://doc.mixphp.cn
 ## 环境要求
 
 * PHP >= 7.2
-* Swoole >= 4.4.1 （可选）
+* Swoole >= 4.4.0 (可选)
 
 ## 快速开始
 
