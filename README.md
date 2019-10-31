@@ -36,7 +36,7 @@ composer create-project mix/mix-phar-skeleton=v2.1.0-RC --prefer-dist
 
 开发方式与 MixPHP 的命令行开发一样，参见 MixPHP 开发指南。
 
-> 注意：本骨架 composer 依赖只安装了命令行所需要的 [最小依赖](https://github.com/mix-php/mix-phar-skeleton/blob/master/composer.json#L19)，像 mix/cache、mix/server 等其他库都需用户手动自行安装
+> 注意：本骨架 composer 依赖只安装了命令行所需要的 [最小依赖](https://github.com/mix-php/mix-phar-skeleton/blob/master/composer.json#L19)，像 mix/cache、mix/server 等其他库都需用户自行安装
 
 ## License
 
