@@ -2,7 +2,7 @@
 
 本项目是 MixPHP 开发命令行单执行文件 (Phar) 的程序骨架，MixPHP 封装了大量命令行开发基础设施，包括：
 
-- 统一的 CLI 交互封装，用户只需增加 ::class 即可完成一个功能完整的命令行程序。
+- 统一的 CLI 交互封装，用户只需增加 `::class` 即可完成一个功能完整的命令行程序。
 - `Flag` 获取命令行参数。
 - `Color` 带颜色的输出支持。
 - `xgo + chan`、`WaitGroup` 全面的原生协程支持。(需要 Swoole)
@@ -35,6 +35,8 @@ composer create-project mix/mix-phar-skeleton=v2.1.0-RC --prefer-dist
 ```
 
 开发方式与 MixPHP 的命令行开发一样，参见 MixPHP 开发指南。
+
+> 注意：本骨架 composer 依赖只安装了命令行所需要的 [最小依赖](https://github.com/mix-php/mix-phar-skeleton/blob/master/composer.json#L19)，像 mix/database、mix/redis 这些库都需用户手动自行安装
 
 ## License
 
