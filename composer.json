@@ -23,7 +23,11 @@
     "mix/log": "v2.1.0-RC",
     "mix/validate": "v2.1.0-RC",
     "mix/helper": "v2.1.0-RC",
-    "mix/concurrent": "v2.1.0-RC"
+    "mix/concurrent": "v2.1.0-RC",
+    "mix/pool": "v2.1.0-RC",
+    "mix/event": "v2.1.0-RC",
+    "mix/database": "v2.1.0-RC",
+    "mix/redis": "v2.1.0-RC"
   },
   "require-dev": {
     "swoole/ide-helper": "dev-master"
