@@ -18,16 +18,16 @@
   ],
   "require": {
     "php": ">=7.2.0",
-    "mix/console": "v2.1.0-RC",
-    "mix/bean": "v2.1.0-RC",
-    "mix/log": "v2.1.0-RC",
-    "mix/validate": "v2.1.0-RC",
-    "mix/helper": "v2.1.0-RC",
-    "mix/concurrent": "v2.1.0-RC",
-    "mix/pool": "v2.1.0-RC",
-    "mix/event": "v2.1.0-RC",
-    "mix/database": "v2.1.0-RC",
-    "mix/redis": "v2.1.0-RC"
+    "mix/console": "v2.1.0-RC2",
+    "mix/bean": "v2.1.0-RC2",
+    "mix/log": "v2.1.0-RC2",
+    "mix/validate": "v2.1.0-RC2",
+    "mix/helper": "v2.1.0-RC2",
+    "mix/concurrent": "v2.1.0-RC2",
+    "mix/pool": "v2.1.0-RC2",
+    "mix/event": "v2.1.0-RC2",
+    "mix/database": "v2.1.0-RC2",
+    "mix/redis": "v2.1.0-RC2"
   },
   "require-dev": {
     "swoole/ide-helper": "dev-master"
