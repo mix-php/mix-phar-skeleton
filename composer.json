@@ -18,21 +18,20 @@
   ],
   "require": {
     "php": ">=7.2.0",
-    "mix/console": "v2.1.0-RC2",
-    "mix/bean": "v2.1.0-RC2",
-    "mix/log": "v2.1.0-RC2",
-    "mix/validate": "v2.1.0-RC2",
-    "mix/helper": "v2.1.0-RC2",
-    "mix/concurrent": "v2.1.0-RC2",
-    "mix/pool": "v2.1.0-RC2",
-    "mix/event": "v2.1.0-RC2",
-    "mix/database": "v2.1.0-RC2",
-    "mix/redis": "v2.1.0-RC2"
+    "mix/console": "~2.1.0",
+    "mix/bean": "~2.1.0",
+    "mix/log": "~2.1.0",
+    "mix/validate": "~2.1.0",
+    "mix/helper": "~2.1.0",
+    "mix/concurrent": "~2.1.0",
+    "mix/pool": "~2.1.0",
+    "mix/event": "~2.1.0",
+    "mix/database": "~2.1.0",
+    "mix/redis": "~2.1.0"
   },
   "require-dev": {
     "swoole/ide-helper": "dev-master"
   },
-  "minimum-stability": "RC",
   "autoload": {
     "psr-4": {
       "App\\": "app/src/"
