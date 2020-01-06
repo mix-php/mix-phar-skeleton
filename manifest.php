@@ -13,7 +13,7 @@ return [
     'appDebug'   => true,
 
     // 基础路径
-    'basePath'   => str_replace(['phar://', '/'], ['', DIRECTORY_SEPARATOR], dirname(dirname(__DIR__))),
+    'basePath'   => get_phar_dir(),
 
     // 协程配置
     'coroutine'  => [
@@ -103,6 +103,21 @@ return [
             // 构造函数注入
             'constructorArgs' => [
                 // ...
+            ],
+        ],
+
+        // 配置
+        [
+            // 名称
+            'name'            => 'config',
+            // 作用域
+            'scope'           => \Mix\Bean\BeanDefinition::SINGLETON,
+            // 类路径
+            'class'           => \Noodlehaus\Config::class,
+            // 构造函数注入
+            'constructorArgs' => [
+                // 配置文件目录
+                get_phar_dir() . DIRECTORY_SEPARATOR . 'config.ini',
             ],
         ],
 

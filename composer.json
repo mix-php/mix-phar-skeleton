@@ -27,17 +27,18 @@
     "mix/pool": "~2.1.0",
     "mix/event": "~2.1.0",
     "mix/database": "~2.1.0",
-    "mix/redis": "~2.1.0"
+    "mix/redis": "~2.1.0",
+    "hassankhan/config": "^2.1"
   },
   "require-dev": {
     "swoole/ide-helper": "dev-master"
   },
   "autoload": {
     "psr-4": {
-      "App\\": "app/src/"
+      "App\\": "app/"
     },
     "files": [
-      "app/src/functions.php"
+      "app/functions.php"
     ]
   }
 }
