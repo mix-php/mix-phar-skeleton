@@ -17,8 +17,10 @@ return [
 
     // 协程配置
     'coroutine'  => [
-        true,
-        [
+        // 启用
+        'enable'  => true,
+        // 选项
+        'options' => [
             'max_coroutine' => 300000,
             'hook_flags'    => 1879048191 ^ 256, // SWOOLE_HOOK_ALL ^ SWOOLE_HOOK_FILE,
         ],
@@ -54,48 +56,38 @@ return [
                 // 错误级别
                 E_ALL,
                 // 日志
-                ['ref' => 'log'],
+                ['ref' => 'logger'],
+            ],
+            // 属性注入
+            'properties'      => [
+                // 事件调度器
+                'dispatcher' => ['ref' => 'eventDispatcher'],
             ],
         ],
 
         // 日志
         [
             // 名称
-            'name'       => 'log',
+            'name'            => 'logger',
             // 作用域
-            'scope'      => \Mix\Bean\BeanDefinition::SINGLETON,
+            'scope'           => \Mix\Bean\BeanDefinition::SINGLETON,
             // 类路径
-            'class'      => \Mix\Log\Logger::class,
-            // 属性注入
-            'properties' => [
-                // 日志记录级别
-                'levels'  => ['emergency', 'alert', 'critical', 'error', 'warning', 'notice', 'info', 'debug'],
-                // 处理器
-                'handler' => ['ref' => \Mix\Log\MultiHandler::class],
-            ],
-        ],
-
-        // 日志处理器
-        [
-            // 类路径
-            'class'           => \Mix\Log\MultiHandler::class,
+            'class'           => \Mix\Monolog\Logger::class,
             // 构造函数注入
             'constructorArgs' => [
-                // 标准输出处理器
-                ['ref' => \Mix\Log\StdoutHandler::class],
+                // name
+                'MIX',
+                // handlers
+                [new \Mix\Monolog\Handler\ConsoleHandler],
+                // processors
+                [new \Monolog\Processor\PsrLogMessageProcessor],
             ],
-        ],
-
-        // 日志标准输出处理器
-        [
-            // 类路径
-            'class' => \Mix\Log\StdoutHandler::class,
         ],
 
         // 事件调度器
         [
             // 名称
-            'name'            => 'event',
+            'name'            => 'eventDispatcher',
             // 作用域
             'scope'           => \Mix\Bean\BeanDefinition::SINGLETON,
             // 类路径
