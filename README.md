@@ -1,8 +1,8 @@
 ## Mix Phar Skeleton
 
-本项目是 MixPHP 开发命令行单执行文件 (Phar) 的程序骨架，MixPHP 封装了大量命令行开发基础设施。
+命令行单执行文件 `Phar` 开发程序骨架，Mix 封装的命令行基础设施在骨架中都可使用。
 
-我们还提供了打包工具 [mix-pack](https://github.com/mix-php/mix-pack)，可以将本项目打包为 Phar 文件（就像 golang 编译成执行文件一样）。
+我们提供了打包工具 [mix-pack](https://github.com/mix-php/mix-pack)，可以将本项目打包为 Phar 文件（就像 golang 编译成执行文件一样）。
 
 PHP 原本就是一个动态版本的 C 库集合，现在基于 Swoole 的协程支持，再加上 Mix 封装的大量基础设施，Mix 基本等同于一个动态版本的 Golang，极大的扩展了 PHP 的开发领域，可以用来快速开发各种高性能的 CLI 程序，如：核心业务的守护程序、轻量级中间件、运维工具、系统命令、开发辅助工具等。
 
