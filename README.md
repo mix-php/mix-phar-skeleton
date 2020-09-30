@@ -8,7 +8,7 @@ PHP 原本就是一个动态版本的 C 库集合，现在基于 Swoole 的协�
 
 ## 开发文档
 
-MixPHP 开发指南：http://doc.mixphp.cn
+MixPHP 开发指南：https://openmix.org/mix-php/doc
 
 ## 环境要求
 
